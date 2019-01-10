@@ -32,7 +32,7 @@ export const auth = (email, password, isSignup) => {
       password: password,
       returnSecureToken: true
     }
-    const apiKey = 'AIzaSyDToAVvO2Ae8jN0k1VlA4nO7xIDHCMs9KA';
+    const apiKey = 'APIKEY';
     let url = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=${apiKey}`
     if (!isSignup) {
       url = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${apiKey}`
